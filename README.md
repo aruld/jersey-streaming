@@ -75,6 +75,9 @@ Request and responses logged for various browsers.
 
 Chrome
 ------
+
+![ScreenShot](https://raw.github.com/aruld/jersey-streaming/master/src/main/resources/chrome-network-trace.png)
+
 ```
     Jan 22, 2013 9:29:54 PM com.sun.jersey.api.container.filter.LoggingFilter filter
     INFO: 1 * Server in-bound request
