@@ -32,7 +32,7 @@ public class MediaResource {
         audio = new File(url.getFile());
     }
 
-    //A simple way to verify if the server supports range headers
+    //A simple way to verify if the server supports range headers.
     @HEAD
     @Produces("audio/mp3")
     public Response header() {
