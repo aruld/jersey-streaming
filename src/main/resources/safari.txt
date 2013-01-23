@@ -1,0 +1,87 @@
+Jan 22, 2013 9:48:00 PM com.sun.jersey.api.container.filter.LoggingFilter filter
+INFO: 1 * Server in-bound request
+1 > GET /listen
+1 > Host: localhost:9998
+1 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.17 (KHTML, like Gecko) Version/6.0.2 Safari/536.26.17
+1 > Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+1 > Accept-Language: en-us
+1 > Accept-Encoding: gzip, deflate
+1 > Connection: keep-alive
+1 >
+
+Jan 22, 2013 9:48:00 PM com.sun.jersey.api.container.filter.LoggingFilter$Adapter writeStatusAndHeaders
+INFO: 1 * Server out-bound response
+1 < 200
+1 < Content-Length: 2836624
+1 < Content-Type: audio/mp3
+1 <
+
+Jan 22, 2013 9:48:00 PM com.sun.jersey.api.container.filter.LoggingFilter filter
+INFO: 2 * Server in-bound request
+2 > GET /listen
+2 > Host: localhost:9998
+2 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.17 (KHTML, like Gecko) Version/6.0.2 Safari/536.26.17
+2 > Accept: */*
+2 > Range: bytes=0-1
+2 > Accept-Encoding: identity
+2 > Referer: http://localhost:9998/media/listen
+2 > X-Playback-Session-Id: 3F19F6F4-681F-47DC-8E4F-884AF0D6E88B
+2 > Connection: keep-alive
+2 >
+
+Jan 22, 2013 9:48:00 PM com.sun.jersey.api.container.filter.LoggingFilter$Adapter writeStatusAndHeaders
+INFO: 2 * Server out-bound response
+2 < 206
+2 < Accept-Ranges: bytes
+2 < Content-Range: bytes 0-1/2836624
+2 < Content-Length: 2
+2 < Last-Modified: Wed, 23 Jan 2013 07:29:16 GMT
+2 < Content-Type: audio/mp3
+2 <
+
+Jan 22, 2013 9:48:00 PM com.sun.jersey.api.container.filter.LoggingFilter filter
+INFO: 3 * Server in-bound request
+3 > GET /listen
+3 > Host: localhost:9998
+3 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.17 (KHTML, like Gecko) Version/6.0.2 Safari/536.26.17
+3 > Accept: */*
+3 > Range: bytes=0-2836623
+3 > Accept-Encoding: identity
+3 > Referer: http://localhost:9998/media/listen
+3 > X-Playback-Session-Id: 3F19F6F4-681F-47DC-8E4F-884AF0D6E88B
+3 > Connection: keep-alive
+3 >
+
+Jan 22, 2013 9:48:00 PM com.sun.jersey.api.container.filter.LoggingFilter$Adapter writeStatusAndHeaders
+INFO: 3 * Server out-bound response
+3 < 206
+3 < Accept-Ranges: bytes
+3 < Content-Range: bytes 0-2836623/2836624
+3 < Content-Length: 2836624
+3 < Last-Modified: Wed, 23 Jan 2013 07:29:16 GMT
+3 < Content-Type: audio/mp3
+3 <
+
+Jan 22, 2013 9:48:00 PM com.sun.jersey.api.container.filter.LoggingFilter filter
+INFO: 4 * Server in-bound request
+4 > GET /listen
+4 > Host: localhost:9998
+4 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.17 (KHTML, like Gecko) Version/6.0.2 Safari/536.26.17
+4 > Accept: */*
+4 > Range: bytes=131072-2836623
+4 > Accept-Encoding: identity
+4 > Referer: http://localhost:9998/media/listen
+4 > X-Playback-Session-Id: 3F19F6F4-681F-47DC-8E4F-884AF0D6E88B
+4 > Connection: keep-alive
+4 >
+
+Jan 22, 2013 9:48:00 PM com.sun.jersey.api.container.filter.LoggingFilter$Adapter writeStatusAndHeaders
+INFO: 4 * Server out-bound response
+4 < 206
+4 < Accept-Ranges: bytes
+4 < Content-Range: bytes 131072-2836623/2836624
+4 < Content-Length: 2705552
+4 < Last-Modified: Wed, 23 Jan 2013 07:29:16 GMT
+4 < Content-Type: audio/mp3
+4 <
+

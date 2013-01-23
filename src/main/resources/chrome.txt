@@ -1,0 +1,90 @@
+Jan 22, 2013 9:29:54 PM com.sun.jersey.api.container.filter.LoggingFilter filter
+INFO: 1 * Server in-bound request
+1 > GET /listen
+1 > Host: localhost:9998
+1 > Connection: keep-alive
+1 > Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+1 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.56 Safari/537.17
+1 > Accept-Encoding: gzip,deflate,sdch
+1 > Accept-Language: en-US,en;q=0.8
+1 > Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+1 >
+
+Jan 22, 2013 9:29:55 PM com.sun.jersey.api.container.filter.LoggingFilter$Adapter writeStatusAndHeaders
+INFO: 1 * Server out-bound response
+1 < 200
+1 < Content-Length: 2836624
+1 < Content-Type: audio/mp3
+1 <
+
+Jan 22, 2013 9:29:55 PM com.sun.jersey.api.container.filter.LoggingFilter filter
+INFO: 2 * Server in-bound request
+2 > GET /listen
+2 > Host: localhost:9998
+2 > Connection: keep-alive
+2 > Accept-Encoding: identity;q=1, *;q=0
+2 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.56 Safari/537.17
+2 > Accept: */*
+2 > Referer: http://localhost:9998/media/listen
+2 > Accept-Language: en-US,en;q=0.8
+2 > Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+2 > Range: bytes=0-
+2 >
+
+Jan 22, 2013 9:29:55 PM com.sun.jersey.api.container.filter.LoggingFilter$Adapter writeStatusAndHeaders
+INFO: 2 * Server out-bound response
+2 < 206
+2 < Accept-Ranges: bytes
+2 < Content-Range: bytes 0-1048576/2836624
+2 < Content-Length: 1048577
+2 < Last-Modified: Wed, 23 Jan 2013 07:29:16 GMT
+2 < Content-Type: audio/mp3
+2 <
+
+Jan 22, 2013 9:30:57 PM com.sun.jersey.api.container.filter.LoggingFilter filter
+INFO: 4 * Server in-bound request
+3 > GET /listen
+3 > Host: localhost:9998
+3 > Connection: keep-alive
+3 > Accept-Encoding: identity;q=1, *;q=0
+3 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.56 Safari/537.17
+3 > Accept: */*
+3 > Referer: http://localhost:9998/media/listen
+3 > Accept-Language: en-US,en;q=0.8
+3 > Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+3 > Range: bytes=1048577-
+3 >
+
+Jan 22, 2013 9:30:57 PM com.sun.jersey.api.container.filter.LoggingFilter$Adapter writeStatusAndHeaders
+INFO: 4 * Server out-bound response
+3 < 206
+3 < Accept-Ranges: bytes
+3 < Content-Range: bytes 1048577-2097153/2836624
+3 < Content-Length: 1048577
+3 < Last-Modified: Wed, 23 Jan 2013 07:29:16 GMT
+3 < Content-Type: audio/mp3
+3 <
+
+Jan 22, 2013 9:32:02 PM com.sun.jersey.api.container.filter.LoggingFilter filter
+INFO: 5 * Server in-bound request
+4 > GET /listen
+4 > Host: localhost:9998
+4 > Connection: keep-alive
+4 > Accept-Encoding: identity;q=1, *;q=0
+4 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.56 Safari/537.17
+4 > Accept: */*
+4 > Referer: http://localhost:9998/media/listen
+4 > Accept-Language: en-US,en;q=0.8
+4 > Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+4 > Range: bytes=2097154-
+4 >
+
+Jan 22, 2013 9:32:02 PM com.sun.jersey.api.container.filter.LoggingFilter$Adapter writeStatusAndHeaders
+INFO: 5 * Server out-bound response
+4 < 206
+4 < Accept-Ranges: bytes
+4 < Content-Range: bytes 2097154-2836623/2836624
+4 < Content-Length: 739470
+4 < Last-Modified: Wed, 23 Jan 2013 07:29:16 GMT
+4 < Content-Type: audio/mp3
+4 <

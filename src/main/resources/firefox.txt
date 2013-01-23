@@ -1,0 +1,18 @@
+Jan 22, 2013 9:41:24 PM com.sun.jersey.api.container.filter.LoggingFilter filter
+INFO: 1 * Server in-bound request
+1 > GET /listen
+1 > Host: localhost:9998
+1 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:18.0) Gecko/20100101 Firefox/18.0
+1 > Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+1 > Accept-Language: en-US,en;q=0.5
+1 > Accept-Encoding: gzip, deflate
+1 > Connection: keep-alive
+1 > 
+
+Jan 22, 2013 9:41:24 PM com.sun.jersey.api.container.filter.LoggingFilter$Adapter writeStatusAndHeaders
+INFO: 1 * Server out-bound response
+1 < 200
+1 < Content-Length: 2836624
+1 < Content-Type: audio/mp3
+1 < 
+

@@ -1,0 +1,18 @@
+Jan 22, 2013 9:43:38 PM com.sun.jersey.api.container.filter.LoggingFilter filter
+INFO: 1 * Server in-bound request
+1 > GET /listen
+1 > User-Agent: Opera/9.80 (Macintosh; Intel Mac OS X 10.8.2) Presto/2.12.388 Version/12.12
+1 > Host: localhost:9998
+1 > Accept: text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1
+1 > Accept-Language: en,en-US;q=0.9,ja;q=0.8,fr;q=0.7,de;q=0.6,es;q=0.5,it;q=0.4,pt;q=0.3,pt-PT;q=0.2,nl;q=0.1
+1 > Accept-Encoding: gzip, deflate
+1 > Connection: Keep-Alive
+1 > 
+
+Jan 22, 2013 9:43:38 PM com.sun.jersey.api.container.filter.LoggingFilter$Adapter writeStatusAndHeaders
+INFO: 1 * Server out-bound response
+1 < 200
+1 < Content-Length: 2836624
+1 < Content-Type: audio/mp3
+1 <
+
