@@ -1,7 +1,5 @@
 package com.aruld.jersey.streaming;
 
-import com.sun.jersey.spi.resource.Singleton;
-
 import javax.ws.rs.*;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.Response;
@@ -19,7 +17,6 @@ import java.util.Date;
  * @author Arul Dhesiaseelan (aruld@acm.org)
  */
 @Path("listen")
-@Singleton
 public class MediaResource {
 
     final int chunk_size = 1024 * 1024; // 1MB chunks
@@ -56,19 +53,9 @@ public class MediaResource {
     private Response buildStream(final File asset, final String range) throws Exception {
         // range not requested : Firefox, Opera, IE do not send range headers
         if (range == null) {
-            StreamingOutput streamer = new StreamingOutput() {
-                @Override
-                public void write(final OutputStream output) throws IOException, WebApplicationException {
-
-                    final FileChannel inputChannel = new FileInputStream(asset).getChannel();
-                    final WritableByteChannel outputChannel = Channels.newChannel(output);
-                    try {
-                        inputChannel.transferTo(0, inputChannel.size(), outputChannel);
-                    } finally {
-                        // closing the channels
-                        inputChannel.close();
-                        outputChannel.close();
-                    }
+            StreamingOutput streamer = output -> {
+                try (FileChannel inputChannel = new FileInputStream(asset).getChannel(); WritableByteChannel outputChannel = Channels.newChannel(output)) {
+                    inputChannel.transferTo(0, inputChannel.size(), outputChannel);
                 }
             };
             return Response.ok(streamer).status(200).header(HttpHeaders.CONTENT_LENGTH, asset.length()).build();
@@ -93,7 +80,8 @@ public class MediaResource {
 
         final int len = to - from + 1;
         final MediaStreamer streamer = new MediaStreamer(len, raf);
-        Response.ResponseBuilder res = Response.ok(streamer).status(206)
+        Response.ResponseBuilder res = Response.ok(streamer)
+                .status(Response.Status.PARTIAL_CONTENT)
                 .header("Accept-Ranges", "bytes")
                 .header("Content-Range", responseRange)
                 .header(HttpHeaders.CONTENT_LENGTH, streamer.getLenth())
