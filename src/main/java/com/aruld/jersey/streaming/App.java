@@ -42,9 +42,7 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         Server httpServer = startServer();
-        System.out.println(String.format("Jersey app started with WADL available at "
-                        + "%sapplication.wadl\nHit enter to stop it...",
-                BASE_URI, BASE_URI));
+        System.out.println(String.format("Jersey app started with WADL available at %sapplication.wadl\nHit enter to stop it...", BASE_URI, BASE_URI));
         System.in.read();
         httpServer.stop();
     }
