@@ -67,7 +67,7 @@ Request and responses logged for various browsers.
 Chrome
 ------
 
-![ScreenShot](https://raw.github.com/aruld/jersey-streaming/tree/jersey2/src/main/resources/chrome-network-trace.png)
+![ScreenShot](https://raw.githubusercontent.com/aruld/jersey-streaming/jersey2/src/main/resources/chrome-network-trace.png)
 
 ```
     Jun 21, 2015 12:53:21 PM org.glassfish.jersey.filter.LoggingFilter log
