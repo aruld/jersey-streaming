@@ -1,11 +1,11 @@
 package com.aruld.jersey.streaming;
 
+import org.eclipse.jetty.server.Server;
 import org.glassfish.jersey.filter.LoggingFilter;
+import org.glassfish.jersey.jetty.JettyHttpContainerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
-import org.glassfish.jersey.simple.SimpleContainerFactory;
 
 import javax.ws.rs.core.UriBuilder;
-import java.io.Closeable;
 import java.io.IOException;
 import java.net.URI;
 
@@ -33,19 +33,19 @@ public class App {
 
     public static final URI BASE_URI = getBaseURI();
 
-    protected static Closeable startServer() throws IOException {
-        System.out.println("Starting simple...");
+    protected static Server startServer() throws IOException {
+        System.out.println("Starting jetty...");
         ResourceConfig rc = new ResourceConfig();
         rc.registerInstances(new MediaResource(), new LoggingFilter());
-        return SimpleContainerFactory.create(BASE_URI, rc);
+        return JettyHttpContainerFactory.createServer(BASE_URI, rc);
     }
 
-    public static void main(String[] args) throws IOException {
-        Closeable httpServer = startServer();
+    public static void main(String[] args) throws Exception {
+        Server httpServer = startServer();
         System.out.println(String.format("Jersey app started with WADL available at "
-                + "%sapplication.wadl\nTry out %shelloworld\nHit enter to stop it...",
+                        + "%sapplication.wadl\nHit enter to stop it...",
                 BASE_URI, BASE_URI));
         System.in.read();
-        httpServer.close();
+        httpServer.stop();
     }
 }
