@@ -14,7 +14,7 @@ import java.util.Date;
 /**
  * Streaming resource
  *
- * @author Arul Dhesiaseelan (aruld@acm.org)
+ * @author Arul Dhesiaseelan (aruld.info@gmail.com)
  */
 @Path("listen")
 public class MediaResource {
@@ -51,7 +51,7 @@ public class MediaResource {
      * @throws Exception IOException if an error occurs in streaming.
      */
     private Response buildStream(final File asset, final String range) throws Exception {
-        // range not requested : Firefox, Opera, IE do not send range headers
+        // range not requested : Firefox does not send range headers
         if (range == null) {
             StreamingOutput streamer = output -> {
                 try (FileChannel inputChannel = new FileInputStream(asset).getChannel(); WritableByteChannel outputChannel = Channels.newChannel(output)) {
@@ -63,8 +63,9 @@ public class MediaResource {
 
         String[] ranges = range.split("=")[1].split("-");
         final int from = Integer.parseInt(ranges[0]);
-        /**
-         * Chunk media if the range upper bound is unspecified. Chrome sends "bytes=0-"
+
+        /*
+          Chunk media if the range upper bound is unspecified. Chrome, Opera sends "bytes=0-"
          */
         int to = chunk_size + from;
         if (to >= asset.length()) {

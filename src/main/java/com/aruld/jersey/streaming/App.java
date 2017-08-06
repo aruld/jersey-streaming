@@ -1,18 +1,20 @@
 package com.aruld.jersey.streaming;
 
 import org.eclipse.jetty.server.Server;
-import org.glassfish.jersey.filter.LoggingFilter;
 import org.glassfish.jersey.jetty.JettyHttpContainerFactory;
+import org.glassfish.jersey.logging.LoggingFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 
 import javax.ws.rs.core.UriBuilder;
 import java.io.IOException;
 import java.net.URI;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Media server
  *
- * @author Arul Dhesiaseelan (aruld@acm.org)
+ * @author Arul Dhesiaseelan (aruld.info@gmail.com)
  */
 public class App {
 
@@ -35,9 +37,9 @@ public class App {
 
     protected static Server startServer() throws IOException {
         System.out.println("Starting jetty...");
-        ResourceConfig rc = new ResourceConfig();
-        rc.registerInstances(new MediaResource(), new LoggingFilter());
-        return JettyHttpContainerFactory.createServer(BASE_URI, rc);
+        ResourceConfig config = new ResourceConfig(MediaResource.class);
+        config.register(new LoggingFeature(Logger.getLogger(LoggingFeature.DEFAULT_LOGGER_NAME), Level.INFO, LoggingFeature.Verbosity.PAYLOAD_TEXT, Integer.MAX_VALUE));
+        return JettyHttpContainerFactory.createServer(BASE_URI, config);
     }
 
     public static void main(String[] args) throws Exception {

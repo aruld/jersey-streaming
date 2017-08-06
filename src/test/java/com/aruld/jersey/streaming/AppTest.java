@@ -14,7 +14,7 @@ import java.io.OutputStream;
 /**
  * Media client
  *
- * @author Arul Dhesiaseelan (aruld@acm.org)
+ * @author Arul Dhesiaseelan (aruld.info@gmail.com)
  */
 public class AppTest {
     public static void main(String[] args) throws Exception {
