@@ -1,0 +1,40 @@
+Aug 06, 2017 2:56:03 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 1 * Server has received a request on thread qtp1374066265-17
+1 > GET http://localhost:9998/listen
+1 > Accept: text/html, application/xhtml+xml, image/jxr, */*
+1 > Accept-Encoding: gzip, deflate
+1 > Accept-Language: en-US
+1 > Connection: keep-alive
+1 > DNT: 1
+1 > Host: localhost:9998
+1 > User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063
+
+Aug 06, 2017 2:56:03 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 1 * Server responded with a response on thread qtp1374066265-17
+1 < 200
+1 < Content-Length: 2836624
+1 < Content-Type: audio/mp3
+
+Aug 06, 2017 2:56:04 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 2 * Server has received a request on thread qtp1374066265-16
+2 > GET http://localhost:9998/listen
+2 > Accept: */*
+2 > Accept-Encoding: gzip, deflate
+2 > Accept-Language: en-US
+2 > Cache-Control: no-cache
+2 > Connection: keep-alive
+2 > DNT: 1
+2 > GetContentFeatures.DLNA.ORG: 1
+2 > Host: localhost:9998
+2 > If-Unmodified-Since: Sun, 06 Aug 2017 17:27:00 GMT
+2 > Range: bytes=1048577-2836623
+2 > User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063
+
+Aug 06, 2017 2:56:04 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 2 * Server responded with a response on thread qtp1374066265-16
+2 < 206
+2 < Accept-Ranges: bytes
+2 < Content-Length: 1788047
+2 < Content-Range: bytes 1048577-2836623/2836624
+2 < Content-Type: audio/mp3
+2 < Last-Modified: Sun, 06 Aug 2017 17:27:00 GMT
