@@ -14,7 +14,7 @@ import java.util.Date;
 /**
  * Streaming resource
  *
- * @author Arul Dhesiaseelan (aruld.info@gmail.com)
+ * @author Arul Dhesiaseelan (arul@httpmine.org)
  */
 @Path("listen")
 public class MediaResource {

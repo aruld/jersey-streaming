@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 /**
  * Media server
  *
- * @author Arul Dhesiaseelan (aruld.info@gmail.com)
+ * @author Arul Dhesiaseelan (arul@httpmine.org)
  */
 public class App {
 
