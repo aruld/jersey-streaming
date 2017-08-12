@@ -9,7 +9,7 @@ import java.io.RandomAccessFile;
 /**
  * Media streaming utility
  *
- * @author Arul Dhesiaseelan (aruld.info@gmail.com)
+ * @author Arul Dhesiaseelan (arul@httpmine.org)
  */
 public class MediaStreamer implements StreamingOutput {
 
