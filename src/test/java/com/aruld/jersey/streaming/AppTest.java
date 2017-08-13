@@ -21,7 +21,7 @@ public class AppTest {
         Client client = ClientBuilder.newClient();
         WebTarget target = client.target("http://localhost:9998/audio");
         Response response = target.request().head();
-        if (response.getStatus() == 206) {
+        if (response.getStatus() == 200 && response.getHeaderString("Accept-Ranges").equals("bytes")) {
             System.out.println("Range supported!");
 
             // Simulate Safari request
