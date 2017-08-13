@@ -2,6 +2,7 @@ package com.aruld.jersey.streaming;
 
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.StreamingOutput;
+import java.io.EOFException;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.RandomAccessFile;
@@ -15,7 +16,7 @@ public class MediaStreamer implements StreamingOutput {
 
     private int length;
     private RandomAccessFile raf;
-    final byte[] buf = new byte[4096];
+    private final byte[] buf = new byte[4096];
 
     public MediaStreamer(int length, RandomAccessFile raf) {
         this.length = length;
@@ -30,12 +31,18 @@ public class MediaStreamer implements StreamingOutput {
                 outputStream.write(buf, 0, read);
                 length -= read;
             }
+        } catch (IOException e) {
+            // Ignore EOF write/flush when client aborts a connection
+            if (!(e instanceof EOFException)) {
+                throw e;
+            }
+
         } finally {
             raf.close();
         }
     }
 
-    public int getLenth() {
+    int getLength() {
         return length;
     }
 }

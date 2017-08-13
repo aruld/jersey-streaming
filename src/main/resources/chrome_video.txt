@@ -1,0 +1,453 @@
+Aug 12, 2017 9:31:21 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 1 * Server has received a request on thread qtp1432569632-18
+1 > GET http://localhost:9998/video
+1 > Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+1 > Accept-Encoding: gzip, deflate, br
+1 > Accept-Language: en-US,en;q=0.8
+1 > Connection: keep-alive
+1 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+1 > Host: localhost:9998
+1 > Upgrade-Insecure-Requests: 1
+1 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:21 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 1 * Server responded with a response on thread qtp1432569632-18
+1 < 200
+1 < Content-Length: 276134947
+1 < Content-Type: video/mp4
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 2 * Server has received a request on thread qtp1432569632-13
+2 > GET http://localhost:9998/video
+2 > Accept: */*
+2 > Accept-Encoding: identity;q=1, *;q=0
+2 > Accept-Language: en-US,en;q=0.8
+2 > Connection: keep-alive
+2 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+2 > Host: localhost:9998
+2 > Range: bytes=0-
+2 > Referer: http://localhost:9998/video
+2 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 2 * Server responded with a response on thread qtp1432569632-13
+2 < 206
+2 < Accept-Ranges: bytes
+2 < Content-Length: 1048577
+2 < Content-Range: bytes 0-1048576/276134947
+2 < Content-Type: video/mp4
+2 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 3 * Server has received a request on thread qtp1432569632-16
+3 > GET http://localhost:9998/video
+3 > Accept: */*
+3 > Accept-Encoding: identity;q=1, *;q=0
+3 > Accept-Language: en-US,en;q=0.8
+3 > Connection: keep-alive
+3 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+3 > Host: localhost:9998
+3 > Range: bytes=1048577-
+3 > Referer: http://localhost:9998/video
+3 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 3 * Server responded with a response on thread qtp1432569632-16
+3 < 206
+3 < Accept-Ranges: bytes
+3 < Content-Length: 1048577
+3 < Content-Range: bytes 1048577-2097153/276134947
+3 < Content-Type: video/mp4
+3 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 4 * Server has received a request on thread qtp1432569632-18
+4 > GET http://localhost:9998/video
+4 > Accept: */*
+4 > Accept-Encoding: identity;q=1, *;q=0
+4 > Accept-Language: en-US,en;q=0.8
+4 > Connection: keep-alive
+4 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+4 > Host: localhost:9998
+4 > Range: bytes=276103168-
+4 > Referer: http://localhost:9998/video
+4 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 4 * Server responded with a response on thread qtp1432569632-18
+4 < 206
+4 < Accept-Ranges: bytes
+4 < Content-Length: 31779
+4 < Content-Range: bytes 276103168-276134946/276134947
+4 < Content-Type: video/mp4
+4 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 5 * Server has received a request on thread qtp1432569632-21
+5 > GET http://localhost:9998/video
+5 > Accept: */*
+5 > Accept-Encoding: identity;q=1, *;q=0
+5 > Accept-Language: en-US,en;q=0.8
+5 > Connection: keep-alive
+5 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+5 > Host: localhost:9998
+5 > Range: bytes=1048576-
+5 > Referer: http://localhost:9998/video
+5 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 6 * Server has received a request on thread qtp1432569632-20
+6 > GET http://localhost:9998/favicon.ico
+6 > Accept: image/webp,image/apng,image/*,*/*;q=0.8
+6 > Accept-Encoding: gzip, deflate, br
+6 > Accept-Language: en-US,en;q=0.8
+6 > Connection: keep-alive
+6 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+6 > Host: localhost:9998
+6 > Referer: http://localhost:9998/video
+6 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 6 * Server responded with a response on thread qtp1432569632-20
+6 < 404
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 5 * Server responded with a response on thread qtp1432569632-21
+5 < 206
+5 < Accept-Ranges: bytes
+5 < Content-Length: 1048577
+5 < Content-Range: bytes 1048576-2097152/276134947
+5 < Content-Type: video/mp4
+5 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 7 * Server has received a request on thread qtp1432569632-17
+7 > GET http://localhost:9998/video
+7 > Accept: */*
+7 > Accept-Encoding: identity;q=1, *;q=0
+7 > Accept-Language: en-US,en;q=0.8
+7 > Connection: keep-alive
+7 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+7 > Host: localhost:9998
+7 > Range: bytes=2097153-
+7 > Referer: http://localhost:9998/video
+7 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 7 * Server responded with a response on thread qtp1432569632-17
+7 < 206
+7 < Accept-Ranges: bytes
+7 < Content-Length: 1048577
+7 < Content-Range: bytes 2097153-3145729/276134947
+7 < Content-Type: video/mp4
+7 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 8 * Server has received a request on thread qtp1432569632-18
+8 > GET http://localhost:9998/video
+8 > Accept: */*
+8 > Accept-Encoding: identity;q=1, *;q=0
+8 > Accept-Language: en-US,en;q=0.8
+8 > Connection: keep-alive
+8 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+8 > Host: localhost:9998
+8 > Range: bytes=3145730-
+8 > Referer: http://localhost:9998/video
+8 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 8 * Server responded with a response on thread qtp1432569632-18
+8 < 206
+8 < Accept-Ranges: bytes
+8 < Content-Length: 1048577
+8 < Content-Range: bytes 3145730-4194306/276134947
+8 < Content-Type: video/mp4
+8 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 9 * Server has received a request on thread qtp1432569632-13
+9 > GET http://localhost:9998/video
+9 > Accept: */*
+9 > Accept-Encoding: identity;q=1, *;q=0
+9 > Accept-Language: en-US,en;q=0.8
+9 > Connection: keep-alive
+9 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+9 > Host: localhost:9998
+9 > Range: bytes=4194307-
+9 > Referer: http://localhost:9998/video
+9 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 9 * Server responded with a response on thread qtp1432569632-13
+9 < 206
+9 < Accept-Ranges: bytes
+9 < Content-Length: 1048577
+9 < Content-Range: bytes 4194307-5242883/276134947
+9 < Content-Type: video/mp4
+9 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 10 * Server has received a request on thread qtp1432569632-21
+10 > GET http://localhost:9998/video
+10 > Accept: */*
+10 > Accept-Encoding: identity;q=1, *;q=0
+10 > Accept-Language: en-US,en;q=0.8
+10 > Connection: keep-alive
+10 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+10 > Host: localhost:9998
+10 > Range: bytes=5242884-
+10 > Referer: http://localhost:9998/video
+10 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:22 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 10 * Server responded with a response on thread qtp1432569632-21
+10 < 206
+10 < Accept-Ranges: bytes
+10 < Content-Length: 1048577
+10 < Content-Range: bytes 5242884-6291460/276134947
+10 < Content-Type: video/mp4
+10 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:27 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 11 * Server has received a request on thread qtp1432569632-17
+11 > GET http://localhost:9998/video
+11 > Accept: */*
+11 > Accept-Encoding: identity;q=1, *;q=0
+11 > Accept-Language: en-US,en;q=0.8
+11 > Connection: keep-alive
+11 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+11 > Host: localhost:9998
+11 > Range: bytes=6291461-
+11 > Referer: http://localhost:9998/video
+11 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:27 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 11 * Server responded with a response on thread qtp1432569632-17
+11 < 206
+11 < Accept-Ranges: bytes
+11 < Content-Length: 1048577
+11 < Content-Range: bytes 6291461-7340037/276134947
+11 < Content-Type: video/mp4
+11 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:28 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 12 * Server has received a request on thread qtp1432569632-20
+12 > GET http://localhost:9998/video
+12 > Accept: */*
+12 > Accept-Encoding: identity;q=1, *;q=0
+12 > Accept-Language: en-US,en;q=0.8
+12 > Connection: keep-alive
+12 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+12 > Host: localhost:9998
+12 > Range: bytes=7340038-
+12 > Referer: http://localhost:9998/video
+12 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:28 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 12 * Server responded with a response on thread qtp1432569632-20
+12 < 206
+12 < Accept-Ranges: bytes
+12 < Content-Length: 1048577
+12 < Content-Range: bytes 7340038-8388614/276134947
+12 < Content-Type: video/mp4
+12 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:30 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 13 * Server has received a request on thread qtp1432569632-13
+13 > GET http://localhost:9998/video
+13 > Accept: */*
+13 > Accept-Encoding: identity;q=1, *;q=0
+13 > Accept-Language: en-US,en;q=0.8
+13 > Connection: keep-alive
+13 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+13 > Host: localhost:9998
+13 > Range: bytes=8388615-
+13 > Referer: http://localhost:9998/video
+13 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:30 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 13 * Server responded with a response on thread qtp1432569632-13
+13 < 206
+13 < Accept-Ranges: bytes
+13 < Content-Length: 1048577
+13 < Content-Range: bytes 8388615-9437191/276134947
+13 < Content-Type: video/mp4
+13 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:31 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 14 * Server has received a request on thread qtp1432569632-18
+14 > GET http://localhost:9998/video
+14 > Accept: */*
+14 > Accept-Encoding: identity;q=1, *;q=0
+14 > Accept-Language: en-US,en;q=0.8
+14 > Connection: keep-alive
+14 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+14 > Host: localhost:9998
+14 > Range: bytes=9437192-
+14 > Referer: http://localhost:9998/video
+14 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:31 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 14 * Server responded with a response on thread qtp1432569632-18
+14 < 206
+14 < Accept-Ranges: bytes
+14 < Content-Length: 1048577
+14 < Content-Range: bytes 9437192-10485768/276134947
+14 < Content-Type: video/mp4
+14 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:31 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 15 * Server has received a request on thread qtp1432569632-17
+15 > GET http://localhost:9998/video
+15 > Accept: */*
+15 > Accept-Encoding: identity;q=1, *;q=0
+15 > Accept-Language: en-US,en;q=0.8
+15 > Connection: keep-alive
+15 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+15 > Host: localhost:9998
+15 > Range: bytes=10485769-
+15 > Referer: http://localhost:9998/video
+15 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:31 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 15 * Server responded with a response on thread qtp1432569632-17
+15 < 206
+15 < Accept-Ranges: bytes
+15 < Content-Length: 1048577
+15 < Content-Range: bytes 10485769-11534345/276134947
+15 < Content-Type: video/mp4
+15 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:33 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 16 * Server has received a request on thread qtp1432569632-21
+16 > GET http://localhost:9998/video
+16 > Accept: */*
+16 > Accept-Encoding: identity;q=1, *;q=0
+16 > Accept-Language: en-US,en;q=0.8
+16 > Connection: keep-alive
+16 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+16 > Host: localhost:9998
+16 > Range: bytes=11534346-
+16 > Referer: http://localhost:9998/video
+16 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:33 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 16 * Server responded with a response on thread qtp1432569632-21
+16 < 206
+16 < Accept-Ranges: bytes
+16 < Content-Length: 1048577
+16 < Content-Range: bytes 11534346-12582922/276134947
+16 < Content-Type: video/mp4
+16 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:35 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 17 * Server has received a request on thread qtp1432569632-13
+17 > GET http://localhost:9998/video
+17 > Accept: */*
+17 > Accept-Encoding: identity;q=1, *;q=0
+17 > Accept-Language: en-US,en;q=0.8
+17 > Connection: keep-alive
+17 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+17 > Host: localhost:9998
+17 > Range: bytes=12582923-
+17 > Referer: http://localhost:9998/video
+17 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:35 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 17 * Server responded with a response on thread qtp1432569632-13
+17 < 206
+17 < Accept-Ranges: bytes
+17 < Content-Length: 1048577
+17 < Content-Range: bytes 12582923-13631499/276134947
+17 < Content-Type: video/mp4
+17 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:37 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 18 * Server has received a request on thread qtp1432569632-20
+18 > GET http://localhost:9998/video
+18 > Accept: */*
+18 > Accept-Encoding: identity;q=1, *;q=0
+18 > Accept-Language: en-US,en;q=0.8
+18 > Connection: keep-alive
+18 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+18 > Host: localhost:9998
+18 > Range: bytes=13631500-
+18 > Referer: http://localhost:9998/video
+18 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:37 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 18 * Server responded with a response on thread qtp1432569632-20
+18 < 206
+18 < Accept-Ranges: bytes
+18 < Content-Length: 1048577
+18 < Content-Range: bytes 13631500-14680076/276134947
+18 < Content-Type: video/mp4
+18 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:39 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 19 * Server has received a request on thread qtp1432569632-17
+19 > GET http://localhost:9998/video
+19 > Accept: */*
+19 > Accept-Encoding: identity;q=1, *;q=0
+19 > Accept-Language: en-US,en;q=0.8
+19 > Connection: keep-alive
+19 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+19 > Host: localhost:9998
+19 > Range: bytes=14680077-
+19 > Referer: http://localhost:9998/video
+19 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:39 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 19 * Server responded with a response on thread qtp1432569632-17
+19 < 206
+19 < Accept-Ranges: bytes
+19 < Content-Length: 1048577
+19 < Content-Range: bytes 14680077-15728653/276134947
+19 < Content-Type: video/mp4
+19 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:44 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 20 * Server has received a request on thread qtp1432569632-18
+20 > GET http://localhost:9998/video
+20 > Accept: */*
+20 > Accept-Encoding: identity;q=1, *;q=0
+20 > Accept-Language: en-US,en;q=0.8
+20 > Connection: keep-alive
+20 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+20 > Host: localhost:9998
+20 > Range: bytes=15728654-
+20 > Referer: http://localhost:9998/video
+20 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:44 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 20 * Server responded with a response on thread qtp1432569632-18
+20 < 206
+20 < Accept-Ranges: bytes
+20 < Content-Length: 1048577
+20 < Content-Range: bytes 15728654-16777230/276134947
+20 < Content-Type: video/mp4
+20 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+
+Aug 12, 2017 9:31:47 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 21 * Server has received a request on thread qtp1432569632-21
+21 > GET http://localhost:9998/video
+21 > Accept: */*
+21 > Accept-Encoding: identity;q=1, *;q=0
+21 > Accept-Language: en-US,en;q=0.8
+21 > Connection: keep-alive
+21 > Cookie: Idea-b2e878f0=d5013698-7f0c-4a2f-bd6b-5d6ad9448d18
+21 > Host: localhost:9998
+21 > If-Range: Sun, 13 Aug 2017 02:30:41 GMT
+21 > Range: bytes=16777231-276134946
+21 > Referer: http://localhost:9998/video
+21 > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+
+Aug 12, 2017 9:31:47 PM org.glassfish.jersey.logging.LoggingInterceptor log
+INFO: 21 * Server responded with a response on thread qtp1432569632-21
+21 < 206
+21 < Accept-Ranges: bytes
+21 < Content-Length: 259357716
+21 < Content-Range: bytes 16777231-276134946/276134947
+21 < Content-Type: video/mp4
+21 < Last-Modified: Sun, 13 Aug 2017 02:30:41 GMT
+

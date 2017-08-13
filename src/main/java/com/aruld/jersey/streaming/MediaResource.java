@@ -16,35 +16,56 @@ import java.util.Date;
  *
  * @author Arul Dhesiaseelan (arul@httpmine.org)
  */
-@Path("listen")
+@Path("/")
 public class MediaResource {
 
-    final int chunk_size = 1024 * 1024; // 1MB chunks
     private final File audio;
+    private final File video;
+
+    private final static String BYTES = "bytes";
 
     public MediaResource() {
         // serve media from file system
-        String MEDIA_FILE = "/ScottJoplin-TheEntertainer1902.mp3";
-        URL url = this.getClass().getResource(MEDIA_FILE);
-        audio = new File(url.getFile());
+        String AUDIO_FILE = "/ScottJoplin-TheEntertainer1902.mp3";
+        URL audioUrl = this.getClass().getResource(AUDIO_FILE);
+        audio = new File(audioUrl.getFile());
+        String VIDEO_FILE = "/bbb_sunflower_1080p_30fps_normal.mp4";
+        URL videoUrl = this.getClass().getResource(VIDEO_FILE);
+        video = new File(videoUrl.getFile());
     }
 
-    //A simple way to verify if the server supports range headers.
+    // A simple way to verify if the server supports range headers (https://developer.mozilla.org/en-US/docs/Web/HTTP/Range_requests)
     @HEAD
     @Produces("audio/mp3")
-    public Response header() {
-        return Response.ok().status(206).header(HttpHeaders.CONTENT_LENGTH, audio.length()).build();
+    @Path("audio")
+    public Response audio() {
+        return Response.ok().status(200).header(HttpRangeHeaders.ACCEPT_RANGES, BYTES).header(HttpHeaders.CONTENT_LENGTH, audio.length()).build();
     }
 
     @GET
     @Produces("audio/mp3")
-    public Response streamAudio(@HeaderParam("Range") String range) throws Exception {
+    @Path("audio")
+    public Response streamAudio(@HeaderParam(HttpRangeHeaders.RANGE) String range) throws Exception {
         return buildStream(audio, range);
+    }
+
+    // A simple way to verify if the server supports range headers (https://developer.mozilla.org/en-US/docs/Web/HTTP/Range_requests)
+    @HEAD
+    @Produces("video/mp4")
+    @Path("video")
+    public Response video() {
+        return Response.ok().status(200).header(HttpRangeHeaders.ACCEPT_RANGES, BYTES).header(HttpHeaders.CONTENT_LENGTH, video.length()).build();
+    }
+
+    @GET
+    @Produces("video/mp4")
+    @Path("video")
+    public Response streamVideo(@HeaderParam(HttpRangeHeaders.RANGE) String range) throws Exception {
+        return buildStream(video, range);
     }
 
     /**
      * Adapted from http://stackoverflow.com/questions/12768812/video-streaming-to-ipad-does-not-work-with-tapestry5/12829541#12829541
-     *
      * @param asset Media file
      * @param range range header
      * @return Streaming output
@@ -67,15 +88,20 @@ public class MediaResource {
         /*
           Chunk media if the range upper bound is unspecified. Chrome, Opera sends "bytes=0-"
          */
+        int chunk_size = 1024 * 1024;
         int to = chunk_size + from;
         if (to >= asset.length()) {
             to = (int) (asset.length() - 1);
         }
         if (ranges.length == 2) {
             to = Integer.parseInt(ranges[1]);
+            // check for out of bounds range request
+            if (to > asset.length()) {
+                return Response.status(Response.Status.REQUESTED_RANGE_NOT_SATISFIABLE).build();
+            }
         }
 
-        final String responseRange = String.format("bytes %d-%d/%d", from, to, asset.length());
+        final String responseRange = String.format("%s %d-%d/%d", BYTES, from, to, asset.length());
         final RandomAccessFile raf = new RandomAccessFile(asset, "r");
         raf.seek(from);
 
@@ -83,11 +109,10 @@ public class MediaResource {
         final MediaStreamer streamer = new MediaStreamer(len, raf);
         Response.ResponseBuilder res = Response.ok(streamer)
                 .status(Response.Status.PARTIAL_CONTENT)
-                .header("Accept-Ranges", "bytes")
-                .header("Content-Range", responseRange)
-                .header(HttpHeaders.CONTENT_LENGTH, streamer.getLenth())
+                .header(HttpRangeHeaders.ACCEPT_RANGES, BYTES)
+                .header(HttpRangeHeaders.CONTENT_RANGE, responseRange)
+                .header(HttpHeaders.CONTENT_LENGTH, streamer.getLength())
                 .header(HttpHeaders.LAST_MODIFIED, new Date(asset.lastModified()));
         return res.build();
     }
-
 }

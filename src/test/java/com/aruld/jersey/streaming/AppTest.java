@@ -19,7 +19,7 @@ import java.io.OutputStream;
 public class AppTest {
     public static void main(String[] args) throws Exception {
         Client client = ClientBuilder.newClient();
-        WebTarget target = client.target("http://localhost:9998/listen");
+        WebTarget target = client.target("http://localhost:9998/audio");
         Response response = target.request().head();
         if (response.getStatus() == 206) {
             System.out.println("Range supported!");
